@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <style>
+        * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+ 
+#navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #333;
+  z-index: 1000;
+}
+
+#navbar ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 1rem 0;
+}
+
+#navbar li a {
+  color: white;
+  text-decoration: none;
+  padding: 0 1.5rem;
+}
+
+#navbar li a:hover {
+  text-decoration: underline;
+}
+
+ 
+#welcome-section {
+  height: 100vh;
+  background-color: #f4f4f4;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+#welcome-section h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+ 
+#projects {
+  padding: 5rem 2rem;
+  background-color: #ddd;
+  text-align: center;
+}
+
+.project-tile {
+  margin-top: 2rem;
+}
+
+.project-tile a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+}
+
+ 
+#contact {
+  padding: 4rem 2rem;
+  text-align: center;
+  background-color: #eee;
+}
+
+ 
+@media only screen and (max-width: 600px) {
+  #navbar ul {
+    flex-direction: column;
+  }
+
+  #navbar li {
+    padding: 0.5rem 0;
+  }
+
+  #welcome-section h1 {
+    font-size: 2rem;
+  }
+}
+    </style>
+  </head>
+  <body>
+    <nav id="navbar">
+      <ul>
+        <li><a href="#welcome-section">Welcome</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <section id="welcome-section">
+      <h1>Welcome to My Portfolio</h1>
+      <p>I'm a web developer passionate about responsive design.</p>
+    </section>
+
+    <section id="projects">
+      <h2>My Projects</h2>
+      <div class="project-tile">
+        <a href="https://example.com" target="_blank">Project 1</a>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <a id="profile-link" href="https://github.com/yourusername" target="_blank">GitHub Profile</a>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JavaScript Docs</title>
+  <style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  height: 100vh;
+  line-height: 1.6;
+}
+
+#navbar {
+  min-width: 250px;
+  background-color: #333;
+  color: #fff;
+  padding: 2rem;
+  position: fixed;
+  height: 100vh;
+  overflow-y: auto;
+}
+
+#navbar header {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.nav-link {
+  display: block;
+  color: white;
+  text-decoration: none;
+  margin: 0.5rem 0;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+#main-doc {
+  margin-left: 270px;
+  padding: 2rem;
+  overflow-y: auto;
+  flex: 1;
+}
+
+.main-section {
+  margin-bottom: 3rem;
+}
+
+.main-section header {
+  font-size: 1.8rem;
+  color: #222;
+  margin-bottom: 1rem;
+}
+
+code {
+  display: block;
+  background: #eee;
+  padding: 1rem;
+  margin: 1rem 0;
+  font-family: monospace;
+}
+
+ul {
+  margin-left: 2rem;
+}
+
+@media only screen and (max-width: 768px) {
+  #navbar {
+    position: static;
+    width: 100%;
+    height: auto;
+  }
+
+  #main-doc {
+    margin-left: 0;
+  }
+}
+
+  </style>
+</head>
+<body>
+  <nav id="navbar">
+    <header>JavaScript Documentation</header>
+    <a class="nav-link" href="#Introduction">Introduction</a>
+    <a class="nav-link" href="#Basics">Basics</a>
+    <a class="nav-link" href="#Functions">Functions</a>
+    <a class="nav-link" href="#Objects">Objects</a>
+    <a class="nav-link" href="#Arrays">Arrays</a>
+  </nav>
+
+  <main id="main-doc">
+    <section class="main-section" id="Introduction">
+      <header>Introduction</header>
+      <p>JavaScript is a powerful scripting language used for web development.</p>
+      <p>It allows you to make interactive websites.</p>
+      <code>console.log("Hello, world!");</code>
+      <ul>
+        <li>Easy to learn</li>
+        <li>Runs in browser</li>
+      </ul>
+    </section>
+
+    <section class="main-section" id="Basics">
+      <header>Basics</header>
+      <p>JavaScript syntax is similar to other C-like languages.</p>
+      <p>Statements end with semicolons.</p>
+      <code>let x = 10;</code>
+      <ul>
+        <li>let</li>
+        <li>const</li>
+        <li>var</li>
+      </ul>
+    </section>
+
+    <section class="main-section" id="Functions">
+      <header>Functions</header>
+      <p>Functions are reusable blocks of code.</p>
+      <p>You define them with the function keyword.</p>
+      <code>function greet() { alert("Hi"); }</code>
+      <ul>
+        <li>Reusable</li>
+        <li>Scalable</li>
+      </ul>
+    </section>
+
+    <section class="main-section" id="Objects">
+      <header>Objects</header>
+      <p>Objects hold key-value pairs.</p>
+      <p>They are used to store structured data.</p>
+      <code>let user = { name: "John", age: 30 };</code>
+      <ul>
+        <li>Flexible</li>
+        <li>Nested</li>
+      </ul>
+    </section>
+
+    <section class="main-section" id="Arrays">
+      <header>Arrays</header>
+      <p>Arrays are lists of values.</p>
+      <p>They can store any data type.</p>
+      <code>let nums = [1, 2, 3];</code>
+      <ul>
+        <li>Indexed</li>
+        <li>Length property</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>

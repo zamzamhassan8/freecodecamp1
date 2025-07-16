@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Survey Form</title>
+  <style>
+    * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  padding: 20px;
+  color: #333;
+}
+
+.container {
+  max-width: 600px;
+  background: white;
+  padding: 30px;
+  margin: auto;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, p {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select,
+textarea {
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+textarea {
+  min-height: 80px;
+  resize: vertical;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+button {
+  margin-top: 20px;
+  padding: 12px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1 id="title">Customer Satisfaction Survey</h1>
+    <p id="description">We value your feedback! Please fill out the form below.</p>
+
+    <form id="survey-form">
+      <label id="name-label" for="name">Name:</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+      <label id="email-label" for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+      <label id="number-label" for="number">Age:</label>
+      <input type="number" id="number" name="age" min="10" max="100" placeholder="Enter your age">
+
+      <label for="dropdown">How did you hear about us?</label>
+      <select id="dropdown" name="referrer">
+        <option value="">Select one</option>
+        <option value="social">Social Media</option>
+        <option value="friend">Friend</option>
+        <option value="ads">Advertisements</option>
+      </select>
+
+      <p>Would you recommend us to a friend?</p>
+      <label><input type="radio" name="recommend" value="yes"> Yes</label>
+      <label><input type="radio" name="recommend" value="no"> No</label>
+
+      <p>What features do you use the most? (Check all that apply)</p>
+      <label><input type="checkbox" name="features" value="dashboard"> Dashboard</label>
+      <label><input type="checkbox" name="features" value="analytics"> Analytics</label>
+      <label><input type="checkbox" name="features" value="notifications"> Notifications</label>
+
+      <label for="comments">Additional Comments:</label>
+      <textarea id="comments" name="comments" placeholder="Enter your comments here..."></textarea>
+
+      <button type="submit" id="submit">Submit</button>
+    </form>
+  </div>
+</body>
+</html>
